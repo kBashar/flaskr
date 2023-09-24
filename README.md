@@ -6,4 +6,5 @@ configuation, databases.
 App instance folder can be accessed with `app.instance_path`  
 Doc Link: [Instance Folders](https://flask.palletsprojects.com/en/2.3.x/config/#instance-folders)  
 
-### 
+### click   
+Click gives an interface to add new command that can be run with `flask`
