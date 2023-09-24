@@ -18,5 +18,11 @@ In same way we can use this to show error message and others knid of notificatio
 * Flash messages are one time accessible, they will be gone as soon as accessed once.
 * Flas message are stored using `flash(message, category)`. Here second parameter is optional and contains the knid of message the flash is holding, for example, `success`, `error` etc.
 
+### Getting request data inside view function  
+* **request.args** Contains query string data in a dictionary
+* **request.form** Contains form data in a dictionary
+* **request.json** Contains the json object sent. `request.get_json()` also does the same. 
+* Varaible url data are supplied to the view function as keyword arguments
+
 ### Methods  
 1. **app.teardown_appcontext()** tells Flask to call that function when cleaning up after returning the response.  

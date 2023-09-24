@@ -30,7 +30,8 @@ def create_app(test_config=None):
     def hello():
         return "Hello World"
     
-    from . import auth
+    from . import auth, blog
     app.register_blueprint(auth.bp)
+    app.register_blueprint(blog.bp)
     
     return app
